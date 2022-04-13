@@ -1,0 +1,120 @@
+%Dokumentinnstillinger:---------------------------------
+%Ved å google flitting kan du finne ut hva de forskjellige tingene her betyr, og hvordan du kan gjøre eventuelle endringer.
+\documentclass[a4paper,11pt,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\setlength{\parindent}{0pt} 
+\setlength{\parskip}{2ex}
+\usepackage{fixltx2e}
+\usepackage{amsmath}
+\usepackage[pdftex, pdfborderstyle={/S/U/W 0}]{hyperref}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+\begin{document}
+
+%Headingdel:---------------------------------------------
+\begin{minipage}[c]{0.15\textwidth}
+\includegraphics[width=2.0cm]{maler_og_skript/grafikk/elsys_pos_staaende_ntnu.png}  
+\end{minipage}
+\begin{minipage}[c]{0.85\textwidth}
+
+\renewcommand{\arraystretch}{1.7}
+\large 
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\multicolumn{2}{|l|}{} \\
+\multicolumn{2}{|l|}{\huge \textbf{Designnotat}} \\
+\multicolumn{2}{|l|}{}  \\
+\hline
+\multicolumn{2}{|l|}{Tittel: 
+%Skriv inn tittel her:------------------------------------------
+
+} \\
+\hline
+\multicolumn{2}{|l|}{Forfattere: 
+%Skriv inn forfattere her:--------------------------------------
+Morten Klingan Hovstad
+} \\
+\hline
+%Skriv inn versjon og dato her her:-----------------------------
+Versjon: 1.0 & Dato: 
+\\
+\hline 
+\end{tabularx}
+\end{minipage}
+\normalsize
+
+%Automatisk generert innholdsfortegnelse:------------------
+
+\setlength{\parskip}{0ex}
+\renewcommand{\baselinestretch}{0.1}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1.00}\normalsize
+\setlength{\parskip}{2ex}
+\rule{\textwidth}{1pt}
+
+%Selve rapporten:------------------------------------------
+\section{Problembeskrivelse}
+\label{sec:innledning}
+
+\section{Prinsipiell løsning}
+\label{sec:prinsipielllosning}
+
+\section{Realisering og test}
+\label{sec:realisering}
+
+\section{Konklusjon}
+\label{sec:konklusjon}
+
+\section{Takk}
+
+%Bibliografi: Legg til flere elementer ved å legge til flere \bibitem:--------
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{Referanser}
+\begin{thebibliography}{99}
+
+\bibitem{TekniskNotat}
+  Lars	Lundheim,
+  \emph{Teknisk notat: Frekvensmultiplikator},
+  NTNU,
+  1.1 versjon,
+  Elsys-2021-LL-1,
+  2021.
+
+\bibitem{Hjelpehefte}
+  Lars	Lundheim,
+  \emph{Eit hjelpehefte: Innføring i analog og digital elektronikk},
+  NTNU IES,
+  2.1. versjon,
+  2021.
+
+\end{thebibliography}
+
+\phantomsection
+\addcontentsline{toc}{section}{Vedlegg}
+\appendix
+\label{sec:Vedlegg}
+
+%Tillegg. Flere tillegg legges til ved å lage flere sections:-----------------
+
+
+
+
+
+
+
+
+
+\end{document}
