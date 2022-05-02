@@ -1,5 +1,4 @@
-%Dokumentinnstillinger:---------------------------------
-%Ved å google flitting kan du finne ut hva de forskjellige tingene her betyr, og hvordan du kan gjøre eventuelle endringer.
+
 \documentclass[a4paper,11pt,norsk]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{a4wide}
@@ -68,7 +67,7 @@ Versjon: 1.0 & Dato: 27.03.22
 \section{Problembeskrivelse}
 \label{sec:innledning}
 
-Det skal designes en frekvensfordobler. Systemet skal operere på et sinussignal $x_1 = A_1 cos(2πft)$ med kjent frekvens f og produsere et nytt signal $x_2 = A_2 cos(2\pi2f t+\phi)$ med den doble frekvensen 2f. Det stilles ingen krav til amplituden $A_2$ eller fasen $\phi$.
+Det skal designes en frekvensfordobler. Systemet skal operere på et sinussignal $x_1 = A_1 cos(2\pi ft)$ med kjent frekvens f og produsere et nytt signal $x_2 = A_2 cos(2\pi2f t+\phi)$ med den doble frekvensen 2f. Det stilles ingen krav til amplituden $A_2$ eller fasen $\phi$.
 
 \section{Prinsipiell løsning}
 \label{sec:prinsipielllosning}
@@ -109,7 +108,9 @@ Figur \ref{fig:Multiplikator} viser realiseringen av kretsen. Op-ampen er i nega
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{designnotater/DN3/SchematicCRKT.png} 
+
+  \includegraphics[width=0.6\textwidth]{SchematicCRKT.png} 
+
   \caption{Realisering hvor dioden får fram de harmoniske, OP-ampen fungerer som en buffer mens kondensatoren og spolen danner et bånpassfilter.}
   \label{fig:Multiplikator}
 \end{figure}
@@ -118,14 +119,14 @@ Filteret i seg selv testes ved bruk av en network- og spectrum analyser. Resulta
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{TTT4260/DP3/network.png} 
+  \includegraphics[width=1\textwidth]{network.png} 
   \caption{}
   \label{fig:netwok}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{TTT4260/DP3/Figure_1.png} 
+  \includegraphics[width=1\textwidth]{Figure_1.png} 
   \caption{}
   \label{fig:bode}
 \end{figure}
@@ -134,7 +135,7 @@ Teoretisk Q faktor er regnet ved formel \ref{eq:QRLC} og blir 84. Denne blir rel
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{TTT4260/DP3/20220322_193442.jpg} 
+  \includegraphics[width=0.6\textwidth]{20220322_193442.jpg} 
   \caption{Sinus inn i gul, sinus ut i grønn.}
   \label{fig:Fysisk}
 \end{figure}
@@ -143,7 +144,7 @@ Ved hjelp av funksjonsgeneratoren påføres en sinus med frekvens 3.150 KHz, det
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{TTT4260/DP3/ScopeOut.png} 
+  \includegraphics[width=1\textwidth]{ScopeOut.png} 
   \caption{Sinus inn i oransj, sinus ut i blått.}
   \label{fig:Skop}
 \end{figure}
@@ -188,13 +189,4 @@ Omega verksted for å fasitlitere prototyping.
 \label{sec:Vedlegg}
 data.zip
 %Tillegg. Flere tillegg legges til ved å lage flere sections:-----------------
-
-
-
-
-
-
-
-
-
 \end{document}
